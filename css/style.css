@@ -1,0 +1,14 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+div{
+    color:white;
+    display:block;
+    padding:20px;
+}
+#h2{
+    color:white;
+}

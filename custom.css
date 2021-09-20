@@ -1,0 +1,72 @@
+body, html{
+	/* some browsers add default border, to remove that, use this
+	else there will be 2 scroll bars , 1 for the content and 1 because of this border
+	it will fuck your time
+	*/
+	margin:0;
+	padding:0;	
+	overflow-x:hidden;
+	height:100%;
+}
+
+div{
+	display:block;
+}
+
+.images{
+    z-index:1;
+    width:200px;
+    height:200px;
+}
+.parallax1{
+	background-image:url("image.jpg");
+	height:100%;
+
+    z-index:-1;
+/* decides if the background will move with the page when scrolled or not*/
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;	
+}
+
+.container{
+	text-align:left;
+    margin:10px;
+	position:relative;
+	top:75%;
+	width:100%;
+}
+.a1{
+	font-size:50px;
+    font-weight: bolder;
+	letter-spacing:2px;
+	color:#fff;
+	padding:20px;
+}
+.a2{
+	color:white;
+	padding:30px;
+}
+.a3{
+    display:flex;
+    justify-content:space-around;
+	padding:20px;
+	font-size:30px;
+	text-align:center;
+	font-weight:900;
+}
+button:hover{
+    transform:scale(1.1);
+    background-color:#333;
+    color:white;
+    transition:0.5s;
+}
+button{
+    background-color:lightskyblue;
+    border-radius: 10px;
+    font-size:30px;
+    color:#333;
+    width:230px;
+    height:80px;
+}
